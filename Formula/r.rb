@@ -18,8 +18,6 @@ class R < Formula
   depends_on "libpng"
   depends_on "libtiff"
   depends_on "libxext"
-  #depends_on "libxmu"
-  #depends_on "libxt"
   depends_on "openblas"
   depends_on "pcre2"
   depends_on "readline"
@@ -34,7 +32,6 @@ class R < Formula
 
   # RZF additions for building R packages and linear algebra support
   depends_on "ccache"
-  depends_on "cmake"
   depends_on "fribidi"
   depends_on "gdal"
   depends_on "geos"
@@ -161,6 +158,13 @@ class R < Formula
     site_library_cellar = lib/"R/site-library"
     site_library_cellar.unlink if site_library_cellar.exist?
     site_library_cellar.parent.install_symlink site_library
+  end
+
+  def caveats
+    <<~EOS
+      You will likely need `cmake` to install some R packages. Please install it by running:
+        brew install cmake
+    EOS
   end
 
   test do
