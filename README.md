@@ -2,7 +2,7 @@
 
 This is a custom Homebrew R formula that enables OpenBLAS and OpenMP for accelerated linear algebra. It does not require X11/XQuartz and instead relies on Cairo for graphics support. It includes dependencies listed in [this blog post](https://www.btskinner.io/code/install-r-with-openblas-and-openmp-on-macos-mojave/) by Benjamin T. Skinner and is based on [this discussion](https://github.com/sethrfore/homebrew-r-srf/pull/61) with Seth R. Fore.
 
-This formula has only been tested on MacOS. It is based off of the Homebrew core formula, so it should work on other systems, but it has not been tested. Install at your own risk.
+This formula has only been tested on MacOS. It is based off of the [Homebrew core formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/r/r.rb), so it should work on other systems, but it has not been tested. Install at your own risk.
 
 ## Installation
 
