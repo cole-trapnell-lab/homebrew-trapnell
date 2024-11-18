@@ -4,6 +4,8 @@ This is a custom Homebrew R formula that enables OpenBLAS and OpenMP for acceler
 
 This formula has only been tested on MacOS. It is based off of the [Homebrew core formula](https://github.com/Homebrew/homebrew-core/blob/master/Formula/r/r.rb), so it should work on other systems, but it has not been tested. Install at your own risk.
 
+Please note that currently, OpenMP support still does not work, but the OpenBLAS support can still provide substantial speedups in linear algebra computations.
+
 ## Installation
 
 This modified R formula can be installed as follows.
