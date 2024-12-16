@@ -8,7 +8,7 @@ Please note that currently, OpenMP support still does not work, but the OpenBLAS
 
 ## Installation
 
-This modified R formula can be installed as follows.
+Before beginning installation, make sure you do not have any Python virtual environments (such as conda) active, or you will run into problems installing packages. If you see something such as `(base)` at the beginning of your shell prompt, you have a virtual environment active.
 
 Add the repository to your homebrew
 ```sh
