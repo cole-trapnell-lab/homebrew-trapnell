@@ -15,10 +15,11 @@ Add the repository to your homebrew
 brew tap cole-trapnell-lab/homebrew-trapnell
 ```
 
-Compile the modified R formula from source:
+Compile the modified R formula from source. Be sure to also install `cmake` afterwards:
 
 ```sh
 brew install -s cole-trapnell-lab/homebrew-trapnell/r
+brew install cmake
 ```
 
 Check if the default R is correct by running `which R`. It should be `$(brew --prefix)/bin/R`, e.g. `/opt/homebrew/bin/R`. You might have to start a new terminal session for it to take effect. 
